@@ -21,7 +21,8 @@
                     </NuxtLink>
                 </nav>
             </section>
-            <section class="header__action-auth">
+            <section class="header__action-auth flex items-center gap-5">
+                <LocaleButton />
                 <UDropdownMenu 
                     v-if="isLogin"
                     size="lg"
@@ -38,7 +39,7 @@
                         <UAvatar src="https://github.com/nuxt.png" />
                     </button>
                 </UDropdownMenu>
-                <div v-else class="action-auth__button flex items-center gap-7">
+                <div v-else class="action-auth__button flex items-center gap-5">
                     <NuxtLink to="/signin">Masuk</NuxtLink>
                     <BaseButton label="Daftar" to="/signup" />
                 </div>
@@ -58,20 +59,20 @@
         { name: 'Temukan', to: 'discover' },
     ];
 
-    const items = ([
-    [
-        {
-            label: 'Profile',
-            icon: 'i-lucide-user'
-        },
-    ],
-    [
-        {
-            label: 'Logout',
-            icon: 'i-lucide-log-out',
-            color: 'error',
-        }
-    ]
+    const items = computed(() => [
+        [
+            {
+                label: 'Profile',
+                icon: 'i-lucide-user'
+            },
+        ],
+        [
+            {
+                label: 'Logout',
+                icon: 'i-lucide-log-out',
+                color: 'error',
+            }
+        ]
     ]);
 </script>
 

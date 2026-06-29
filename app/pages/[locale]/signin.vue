@@ -1,7 +1,7 @@
 <template>
     <section class="signup-component">
         <div class="signup-wrapper grid min-h-svh lg:grid-cols-2">
-            <article class="auth-banner bg-green-200 hidden lg:block">
+            <article class="auth-banner hidden lg:block">
                 <NuxtImg src="/images/auth/auth-banner.webp" class="w-full h-svh object-cover object-center" />
             </article>
             <article class="form-signup-wrapper font-montserrat flex flex-col gap-4 p-6 md:p-10">
@@ -89,7 +89,7 @@
                             </UForm>
                         </div>
                         <nav class="form-navigation-footer text-center">
-                            <h3 class="text-neutral-500 text-sm">bELUM punya akun SeenTIX? <NuxtLink class="text-blue-500 hover:underline underline-offset-2" to="/signup">Daftar disini.</NuxtLink></h3>
+                            <h3 class="text-neutral-500 text-sm">Belum punya akun SeenTIX? <NuxtLink class="text-blue-500 hover:underline underline-offset-2" to="/signup">Daftar disini.</NuxtLink></h3>
                         </nav>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
 </template>
 
 <script setup>
-    import { signupSchema } from '../modules/auth/schemas/signup.schema'
+    import { signupSchema } from '../../modules/auth/schemas/signup.schema'
 
     definePageMeta({
         middleware: ['guest']

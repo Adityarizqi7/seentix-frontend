@@ -9,6 +9,12 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-07-15',
   css: ['./app/assets/css/main.css'],
+  icon: {
+    customCollections: [{
+      prefix: 'flag',
+      dir: './app/assets/icons/flags'
+    }]
+  },
   modules: ['@nuxt/fonts', '@nuxt/ui', '@nuxt/image', '@pinia/nuxt'],
   components: [
     {

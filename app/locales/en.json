@@ -1,12 +1,30 @@
 {
   "navbar": {
     "home": "Home",
-    "events": "Events",
-    "categories": "Categories",
-    "login": "Login"
+    "events": "Discover",
+    "signin": "Signin",
+    "register": "Register"
   },
   "button": {
-    "buy": "Buy Ticket",
-    "save": "Save"
+    "register": "Create Accout",
+    "signin": "Signin"
+  },
+  "auth": {
+    "signin": {
+      "header_signin": "Signin SeenTIX",
+      "sub_header_signin": "Welcome Back! Sign in to access all the features of SeenTIX.",
+      "form": {
+        "password_column": "Password"
+      }
+    },
+    "register": {
+      "header_signin": "Create New Account",
+      "sub_header_signin": "Create your account to discover exciting events on SeenTIX.",
+      "form": {
+        "full_name_column": "Full Name",
+        "password_column": "Password",
+        "password_confirmation_column": "Password Confirmation"
+      }
+    }
   }
 }

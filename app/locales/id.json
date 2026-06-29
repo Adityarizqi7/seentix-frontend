@@ -1,12 +1,30 @@
 {
   "navbar": {
     "home": "Beranda",
-    "events": "Event",
-    "categories": "Kategori",
-    "signin": "Masuk"
+    "events": "Temukan",
+    "signin": "Masuk",
+    "signup": "Daftar"
   },
   "button": {
-    "buy": "Beli Tiket",
-    "save": "Simpan"
+    "register": "Buat Akun",
+    "signin": "Masuk"
+  },
+  "auth": {
+    "signin": {
+      "header_signin": "Masuk SeenTIX",
+      "sub_header_signin": "Masuk ke Akun anda untuk menjelajahi seluruh fitur di SeenTIX.",
+      "form": {
+          "password_column": "Kata Sandi"
+      }
+    },
+    "signup": {
+      "header_signin": "Buat Akun Baru",
+      "sub_header_signin": "Daftarkan Akun Anda untuk menemukan acara menarik di SeenTIX.",
+      "form": {
+        "full_name_column": "Nama Lengkap",
+        "password_column": "Kata Sandi",
+        "password_confirmation_column": "Konfirmasi Kata Sandi"
+      }
+    }
   }
 }

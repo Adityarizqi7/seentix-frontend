@@ -1,27 +1,19 @@
-import id from '~/locales/id.json'
-import en from '~/locales/en.json'
-
-const messages = {
-  id,
-  en
-}
+// composables/useLocale.ts
+export type Locale = 'id' | 'en'
 
 export const useLocale = () => {
-  const locale = useState('locale', () => 'id')
+  const locale = useState<Locale>('locale', () => 'id')
+  const localeCookie = useCookie<Locale>('locale', {
+    default: () => 'id'
+  })
 
-  const t = (key: any) => {
-    return key
-      .split('.')
-      .reduce((obj: any, item: any) => obj?.[item], messages[locale.value]) ?? key
-  }
-
-  const setLocale = (value: any) => {
+  const setLocale = (value: Locale) => {
     locale.value = value
+    localeCookie.value = value
   }
 
   return {
     locale,
-    setLocale,
-    t
+    setLocale
   }
 }

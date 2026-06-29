@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-montserrat: 'Montserrat', system-ui, sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}

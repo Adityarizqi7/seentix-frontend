@@ -1,9 +1,15 @@
 // import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: import.meta.env.NUXT_PUBLIC_API_URL,
+      apiVersion: '/v1',
+    }
+  },
   compatibilityDate: '2025-07-15',
   css: ['./app/assets/css/main.css'],
-  modules: ['@nuxt/fonts', '@nuxt/ui', '@nuxt/image'],
+  modules: ['@nuxt/fonts', '@nuxt/ui', '@nuxt/image', '@pinia/nuxt'],
   components: [
     {
       path: '~/shared/components',
@@ -41,6 +47,7 @@ export default defineNuxtConfig({
       include: [
         '@vue/devtools-core',
         '@vue/devtools-kit',
+        'zod',
       ]
     }
   }

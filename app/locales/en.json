@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "home": "Home",
+    "events": "Events",
+    "categories": "Categories",
+    "login": "Login"
+  },
+  "button": {
+    "buy": "Buy Ticket",
+    "save": "Save"
+  }
+}

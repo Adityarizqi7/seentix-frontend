@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "home": "Beranda",
+    "events": "Event",
+    "categories": "Kategori",
+    "signin": "Masuk"
+  },
+  "button": {
+    "buy": "Beli Tiket",
+    "save": "Simpan"
+  }
+}

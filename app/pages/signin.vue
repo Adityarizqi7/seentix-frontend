@@ -11,8 +11,8 @@
                 <div class="form-box flex flex-1 items-center justify-center">
                     <div class="w-full max-w-120">
                         <div class="form-box-header text-center">
-                            <header class="font-bold text-[1.45rem]">Buat Akun Baru</header>
-                            <h3 class="font-normal text-[14px] mt-1">Daftarkan Akun Anda untuk menemukan acara menarik di SeenTIX.</h3>
+                            <header class="font-bold text-[1.45rem]">Masuk SeenTIX</header>
+                            <h3 class="font-normal text-[14px] mt-1">Masuk ke Akun anda untuk menjelajahi seluruh fitur di SeenTIX.</h3>
                         </div>
                         <div class="form-detail flex justify-center items-center mt-8 mb-8">
                             <UForm
@@ -81,7 +81,7 @@
                                 </UFormField>
             
                                 <BaseButton
-                                    label="Buat Akun"
+                                    label="Masuk"
                                     :loading="loading"
                                     type="submit"
                                     class="w-full"
@@ -89,7 +89,7 @@
                             </UForm>
                         </div>
                         <nav class="form-navigation-footer text-center">
-                            <h3 class="text-neutral-500 text-sm">Sudah punya akun SeenTIX? <NuxtLink class="text-blue-500 hover:underline underline-offset-2" to="/signin">Masuk disini.</NuxtLink></h3>
+                            <h3 class="text-neutral-500 text-sm">bELUM punya akun SeenTIX? <NuxtLink class="text-blue-500 hover:underline underline-offset-2" to="/signup">Daftar disini.</NuxtLink></h3>
                         </nav>
                     </div>
                 </div>

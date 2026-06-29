@@ -80,7 +80,7 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   label: {
     type: String,
     default: 'Button'
@@ -104,7 +104,7 @@ defineProps({
 const emit = defineEmits(['emit']);
 
 const handleClick = (event) => {
-    if (loading || disabled) return;
+    if (props.loading || props.disabled) return;
 
     emit('click', event);
 };
